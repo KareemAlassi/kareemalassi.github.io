@@ -1,0 +1,77 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 1px);
+    font-size: 15px;
+}
+
+.container {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+    margin: 0 30px;
+    border-radius: 30px;
+}
+
+.card {
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.container img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.text {
+    padding: 22px 10px;
+}
+
+.container h2 {
+    color: var(--dark-blue);
+    padding-bottom: 15px;
+}
+
+.container p {
+    color: var(--grayish-blue);
+}
+
+.attribution {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:375px) {
+    .container {
+        max-width: 300px;
+    }
+}
+
+@media (min-width:376px) {
+    .container {
+        max-width: 400px;
+    }
+}
